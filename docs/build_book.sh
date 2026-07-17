@@ -11,16 +11,25 @@ fi
 # save the origin URL before running ghp-import, which has to use the origin remote
 save_origin=$(git remote get-url origin)
 #
+# kill the whole build process if Ctrl+C is entered but restore the origin remote
+cleanup() {
+  echo "Caught Ctrl+C. Restoring the origin remote..."
+  git remote set-url origin ${save_origin}
+  exit 1
+}
+trap cleanup SIGINT SIGTERM
+#
 # get the repo url of the book remote
 book_repo=$(git remote get-url book)
 if [[ -z "${book_repo}" ]]; then
   echo "add a 'book' remote as follows"
   echo "  git remote add book git@github.com:guoqing-noaa/mybook"
+  echo "     replace guoqing-noaa/mybook with your own repository"
   exit 1
 elif [[ "${book_repo}" ==  *"pyDAmonitor/pyDAmonitor" ]]; then
   echo "ERROR: the 'book' remote tracks the authoritative repository:"
   echo "  ${book_repo}"
-  echo "users can ONLY push books to their own forks"
+  echo "users can ONLY push books to their own repositories."
   exit 1
 fi
 

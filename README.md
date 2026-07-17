@@ -15,15 +15,17 @@ pyDAmonitor automatically reads both JEDI and GSI diagnostic files to create a c
 Check the [wiki](https://github.com/pyDAmonitor/pyDAmonitor/wiki) for more information
 
 ## Creating the `pyDAmonitor` conda environment
-Run the following commands to create and activate the `pyDAmonitor` conda environment as needed:
+The `pyDAmonitor` scripts and notebooks depend on several Python packages. These dependencies are listed in `environment.yaml`, which can be used to create a dedicated Conda environment. By default, this environment is named `pyDAmonitor`.
+
+On the supported HPC platforms (`Hera, Ursa, Gaea, Orion, Hercules, and Derecho`), the `pyDAmonitor` Conda environment is already installed and can be loaded with:
+```
+source pyDAmonitor/ush/load_pyDAmonitor.sh
+```
+
+On other platforms where the pyDAmonitor environment is not available, you can create and activate it by running:
 ```
 git clone https://github.com/pyDAmonitor/pyDAmonitor.git
 conda env create -f pyDAmonitor/environment.yaml
 conda activate pyDAmonitor
 ```
-
-**Note:** The `pyDAmonitor` environment is already installed on `Hera/Ursa/Gaea/Orion/Hercules/Derecho` and can be loaded with
-```
-source pyDAmonitor/ush/load_pyDAmonitor.sh
-```
-Sample data is also staged on these machines for a quick start. If you need the sample data on other platforms, feel free to reach out to the pyDAmonitor team.
+**NOTE:** Sample data are pre-staged on supported platforms for a quick start. If you need the sample data on other platforms, feel free to reach out to the pyDAmonitor team.

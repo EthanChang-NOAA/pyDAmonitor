@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: pyDAmonitor Documentation
-author: "The pyDAmonitor group"
+author: "the pyDAmonitor group"
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
@@ -22,7 +22,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/NOAA-GSL/pyDAmonitor  # Online location of your book source code
+  url: https://github.com/pyDAmonitor/pyDAmonitor  # Online location of your book source code
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: develop  # Which branch of the repository should be used when creating links (optional)
 
@@ -34,4 +34,4 @@ html:
 
 sphinx:
   config:
-    copyright: "Copyright 2025"
+    copyright: "2025"

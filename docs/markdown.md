@@ -12,7 +12,7 @@ is a slight variation on a flavor of markdown called "CommonMark" markdown,
 with small syntax extensions to allow you to write **roles** and **directives**
 in the Sphinx ecosystem.
 
-For more about MyST, see [the MyST Markdown Overview](https://jupyterbook.org/content/myst.html).
+For more about MyST, see [the MyST Markdown Overview](https://jupyterbook.org/stable/authoring/mystmd/).
 
 ## Sample Roles and Directives
 

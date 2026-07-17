@@ -15,15 +15,15 @@ Jupyter Notebooks are rendered in an on-prem RDHPCS and then sent to GitHub for 
 
 # Table of Contents
 
-- [Find and plot individual MPAS cells](notebooks/cells)
-- [Plot MPAS domain and terrain](notebooks/mpas_domain_shape_terrain)
-- [Plot MPAS model results on the unstructured grid](notebooks/mpas_plotting)
-- [Work with JEDI IODA files](notebooks/jedi_ioda)
-- [Process and plot JEDI diag (jdiag) results](notebooks/jedi_diag_plots)
-- [Work with satellite observations and filters](notebooks/sat-qcfilters)
-- [Work with GSI diag files](notebooks/gsi)
-- [Plot MPAS analysis increment profile](notebooks/script-mpas-increments)
-- [GSIBEC-calculate rotated lon/lat parameters for an MPAS grid](notebooks/gsibec_rotated_lonlat_MPAS)
+- [1. Find and plot individual MPAS cells](notebooks/cells)
+- [2. Plot MPAS domain and terrain](notebooks/mpas_domain_shape_terrain)
+- [3. Plot MPAS model results on the unstructured grid](notebooks/mpas_plotting)
+- [4. Work with JEDI IODA files](notebooks/jedi_ioda)
+- [5. Process and plot JEDI diag (jdiag) results](notebooks/jedi_diag_plots)
+- [6. Work with satellite observations and filters](notebooks/sat-qcfilters)
+- [7. Work with GSI diag files](notebooks/gsi)
+- [8. Plot MPAS analysis increment profile](notebooks/script-mpas-increments)
+- [9. GSIBEC-calculate rotated lon/lat parameters for an MPAS grid](notebooks/gsibec_rotated_lonlat_MPAS)
 
 # Contributors
-Guoqing Ge, Eric James, Junjun Hu, Shawn Murdzek, Haidao Lin, Sijie Pan, Keenan Eure, Aiden Pape, Ethan Wiese, Chunhua Zhou, Liaofan Lin, Ming Hu, Terra Ladwig
+Guoqing Ge, Eric James, Junjun Hu, Shawn Murdzek, Haidao Lin, Sijie Pan, Keenan Eure, Aiden Pape, Ethan Chang, Ethan Wiese, Chunhua Zhou, Liaofan Lin, Ming Hu, Terra Ladwig

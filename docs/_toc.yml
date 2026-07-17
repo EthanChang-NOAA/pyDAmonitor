@@ -5,29 +5,29 @@
 format: jb-book
 root: intro
 parts:
-- caption: preamble
+- caption: Preamble
   chapters:
   - file: markdown
   - file: example
   - file: markdown-notebooks
 
-- caption: DA monitor
+- caption: DA Monitor
   chapters:
   - file: notebooks/cells
-    title: "find and plot individual cells"
+    title: "1. Find and plot individual MPAS cells"
   - file: notebooks/mpas_domain_shape_terrain
-    title: "mpas domain shape and terrain"
+    title: "2. Plot MPAS domain shape and terrain"
   - file: notebooks/mpas_plotting
-    title: "plot MPAS model results on the unstructed grid"
+    title: "3. Plot MPAS model results on the unstructured grid"
   - file: notebooks/jedi_ioda
-    title: "work with JEDI ioda files"
+    title: "4. Work with JEDI IODA files"
   - file: notebooks/jedi_diag_plots
-    title: "process and plot JEDI diag (jdiag) results"
+    title: "5. Process and plot JEDI diag (jdiag) results"
   - file: notebooks/sat-qcfilters
-    title: "work with satellite observations and filters"
+    title: "6. Work with satellite observations and filters"
   - file: notebooks/gsi
-    title: "work with GSI diag files"
+    title: "7. Work with GSI diag files"
   - file: notebooks/script-mpas-increments
-    title: "script-MPAS analysis increment profile"
+    title: "8. Script-MPAS analysis increment profile"
   - file: notebooks/gsibec_rotated_lonlat_MPAS
-    title: "GSIBEC-calculate rotated lon/lat parameters for a mpas grid"
+    title: "9. GSIBEC-calculate rotated lon/lat parameters for an MPAS grid"
